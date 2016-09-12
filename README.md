@@ -1,24 +1,36 @@
-# README
+# Ruby on Rails Application Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails Application Template to quickly start making a Rails app.
 
-Things you may want to cover:
+### Installation
 
-* Ruby version
+Open Terminal and clone the repository.  
+```
+$ cd Desktop
+$ git clone https://github.com/noahramey/rails_template.git
+```
 
-* System dependencies
+Navigate to the repository and bundle Ruby gems:
+```
+$ cd rails_template
+$ bundle install
+$ git remote remove origin
+```
 
-* Configuration
+Make sure Postgres is running on your local machine, then setup the database:
+```
+$ rails db:setup db:test:prepare
+```
 
-* Database creation
+Start the Rails server.
+```
+$ rails s
+```
 
-* Database initialization
+Open your browser and navigate to `localhost:3000`. You are now ready to start making your app!
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+License
+-------
 
-* Deployment instructions
-
-* ...
+MIT License. Copyright &copy; 2016 "Noah Ramey"
